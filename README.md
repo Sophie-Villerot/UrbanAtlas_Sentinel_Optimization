@@ -1,6 +1,7 @@
 # UrbanAtlas_Sentinel_Optimization
 
-## Short summary
+
+## Quick summary
 
 Optimization of the use of Sentinel-2 (potentially 1) images over Urbal Atlas Areas of Interest (AOIs)
 
@@ -17,9 +18,10 @@ the geometric overlap as well as the temporal revit time (around 5 days over Eur
 ### Going further
 
 Could be taken into account:
-- For each Sentinel image, the cloud mask.
+- For each Sentinel image, the cloud mask (i.e. removing all cloudy images or part of them, and interpolating or replacing them with overlapping images);
+- The number of pipelines available for the processing (i.e. how to break the all FUAs ensemble into smaller chunks while minimising the amount of tiles to reprocess).
 
-Instead of L2A images, L3 weekly/monthly average could be used. 
+Instead of L2A images, level L3 images (nterpolated weekly/monthly) average could be used. 
 
 
 ## Bibliography
