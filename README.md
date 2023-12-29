@@ -15,13 +15,20 @@ the geometric overlap as well as the temporal revit time (around 5 days over Eur
 - FUA delineation;
 - Sentinel-2A & B paths/tiles.
 
+### Steps
+
+#### Pre-processing
+
+- Extracting the FUAs delineation from https://land.copernicus.eu/en/map-viewer?dataset=70903c20fc2a4a90ad200bc95a7557d4
+- Extracting path tiles for Sentinel-2 and only keeping the intersection with the FUAs.
+
 ### Going further
 
 Could be taken into account:
 - For each Sentinel image, the cloud mask (i.e. removing all cloudy images or part of them, and interpolating or replacing them with overlapping images);
 - The number of pipelines available for the processing (i.e. how to break the all FUAs ensemble into smaller chunks while minimising the amount of tiles to reprocess).
 
-Instead of L2A images, level L3 images (nterpolated weekly/monthly) average could be used. 
+Instead of L2A images, level L3 images (interpolated weekly/monthly) average could be used. 
 
 
 ## Bibliography
